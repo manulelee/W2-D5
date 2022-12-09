@@ -11,7 +11,9 @@ REGOLE
 */
 console.log("Esercizio 1");
 const pets = ["dog", "cat", "hamster", "redfish"];
-console.log(pets);
+for (let i = 0; i < pets.length; i++) {
+  console.log(pets);
+}
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
@@ -56,12 +58,12 @@ const cars = [
   },
 ];
 
-/*
 console.log("Esercizio 5");
-let licensePlate;
-cars.push({licensePlate:"ab0123cd"});
+for (let i = 0; i < cars.length; i++) {
+  let licensePlate;
+  cars[i].licensePlate = "AB012" + i + "CD";
+}
 console.log(cars);
-*/
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
@@ -69,16 +71,21 @@ console.log(cars);
 */
 console.log("Esercizio 6");
 cars.push({ brand: "Jeep", model: "Grand Cherokee", color: "green", trims: "overland" });
+
+for (let i = 0; i < cars.length; i++) {
+  //cars.trims.pop(); //NON FUNZIONA
+}
+
 console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
-*/ console.log("Esercizio 7");
+*/
+console.log("Esercizio 7");
 const justTrims = [];
 
 for (let i = 0; i < cars.length; i++) {
-  justTrims.push(cars[i].trims);
-  justTrims.splice([1]);
+  justTrims.push(cars[i].trims[0]);
 }
 console.log(justTrims);
 
@@ -100,7 +107,7 @@ for (let i = 0; i < cars.length; i++) {
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
 console.log("Esercizio 9");
 let i = 0;
-while (numericArray[i] !== 100) {
+while (numericArray[i] !== 32) {
   console.log(numericArray[i]);
   i++;
 }
@@ -109,10 +116,25 @@ while (numericArray[i] !== 100) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-/*
+
 const charactersArray = ["g", "n", "u", "z", "d"];
-const newArray = []
-switch (charactersArray[]){
-case 1 
-}
-*/
+const newArray = [];
+for (let i = 0; i < 1; i++)
+  switch (charactersArray[i]) {
+    case "g":
+      charactersArray[i] == "g";
+      newArray.push(7);
+    case "n":
+      charactersArray[i] == "n";
+      newArray.push(12);
+    case "u":
+      charactersArray[i] == "u";
+      newArray.push(19);
+    case "z":
+      charactersArray[i] == "z";
+      newArray.push(21);
+    case "d":
+      charactersArray[i] == "d";
+      newArray.push(4);
+  }
+console.log(newArray);
