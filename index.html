@@ -1,103 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amazon.it - Shopping natalizio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <style>
-    nav a {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-    header {
-      background-color: #22303f;
-      width: 100%;
-      max-height: 80px;
-    }
-    body {
-      width: 100%;
-    }
-    .topbannerimg {
-      max-width: 8%;
-    }
-    nav {
-      background-color: #354858;
-      color: white;
-    }
-
-    main {
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: #e9edee;
-    }
-    section {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .giftCards {
-      width: 100%;
-      color: white;
-      background-color: orange;
-      text-align: center;
-      height: 30px;
-      padding-top: 10px;
-    }
-
-    .perfectGift img {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .perfectGift {
-      background-color: white;
-      height: 250px;
-      max-width: 22%;
-      border-radius: 10px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .bannerNatalizio {
-      width: 100%;
-    }
-    .secondBanner {
-      width: 100%;
-      margin-top: 15px;
-    }
-    .thirdBanner {
-      width: 100%;
-    }
-    .category {
-      background-color: white;
-      margin-bottom: 8 px;
-    }
-
-    footer {
-      background-color: #354858;
-      color: white;
-      text-align: center;
-    }
-    footer div {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    a:link,
-    a:visited {
-      color: white;
-      font-style: normal;
-    }
-
-    .footerlogo {
-      background-color: #22303f;
-      height: 100px;
-    }
-    .footerimg {
-      text-align: center;
-      width: 100px;
-      margin-top: 30px;
-    }
-  </style>
 
   <body>
     <header>
@@ -105,6 +14,7 @@
         <img class="topbannerimg" src="./assets/logo.png" alt="logo amazon" />
       </div>
       <nav>
+        <br />
         <a href="#" target="_blank">All</a>
         <a href="#" target="_blank">Today's deals</a>
         <a href="#" target="_blank">Customer Service</a>
@@ -116,13 +26,23 @@
 
     <main>
       <section class="giftCards">
-        <a>Shop All Holiday Gift Cards</a>
+        <a href="https://www.amazon.it/gp/bestsellers/gift-cards/?ie=UTF8&ref_=sv_sv_gc_1" target="_blank"
+          >Shop All Holiday Gift Cards</a
+        >
       </section>
-      <section>
-        <img class="bannerNatalizio" src="./assets/bg-image.png" alt="Immagine banner natalizio" />
+      <section class="bannerNatalizio">
+        <h1>Holiday Gift Guides</h1>
+        <h4>Be a go-gifter</h4>
       </section>
       <section class="category">
-        <p>Find the perfect gift</p>
+        <p class="categoryP">
+          Find the perfect gift<a
+            href="https://www.amazon.it/gcx/Regali-per-tutti/gfhz/?ref_=nav_cs_giftfinder"
+            target="_blank"
+          >
+            Shop Now</a
+          >
+        </p>
         <img class="perfectGift" src="./assets/img_1.jpg" alt="Amazon kindle" />
         <img class="perfectGift" src="./assets/img_2.jpg" alt="Articoli per smartworking" />
         <img class="perfectGift" src="./assets/img_3.jpg" alt="Orologi" />
@@ -130,11 +50,21 @@
       </section>
       <section>
         <img class="secondBanner" src="./assets/img_9.png" alt="articoli gaming" />
-        <p>Play the gifting game</p>
+        <p class="sectionP">
+          Play the gifting game
+          <a href="https://www.amazon.it/gp/browse.html?node=412603031&ref_=nav_em__vid_HPVG_0_2_13_1" target="_blank"
+            >Shop Gaming</a
+          >
+        </p>
       </section>
       <section>
         <img class="thirdBanner" src="./assets/img_10.png" alt="articoli per musica" />
-        <p>The sound of cheer</p>
+        <p class="sectionP">
+          The sound of cheer
+          <a href="https://www.amazon.it/gp/browse.html?node=435506031&ref_=nav_em__amh_0_2_14_6" target="_blank"
+            >Shop Audio & Accesories</a
+          >
+        </p>
       </section>
     </main>
     <footer>
